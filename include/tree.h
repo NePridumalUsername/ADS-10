@@ -62,7 +62,7 @@ class Tree {
     }
 
  public:
-    Tree(std::vector<char> values) {
+    explicit Tree(std::vector<char> values) {
         root = create(root, values);
     }
 
