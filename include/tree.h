@@ -67,10 +67,10 @@ class Tree {
     }
 
     std::vector<char> getPerm(int n) const {
-        if (n >= factorial(depthNode(root)) || n < 0) {
+        if (n > factorial(depthNode(root)) || n < 1) {
             return std::vector<char>();
         }
-        return getPermNode(root, n);
+        return getPermNode(root, n - 1);
     }
 };
 
